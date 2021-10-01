@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Bridge | Demo Site for Developers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://bridge40.qodeinteractive.com/xmlrpc.php" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://bridge40.qodeinteractive.com/wp-content/themes/bridge/img/favicon.ico">
+    <link rel="apple-touch-icon" href="https://bridge40.qodeinteractive.com/wp-content/themes/bridge/img/favicon.ico" />
+    <link href='//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,300italic,400italic|Roboto+Slab:100,200,300,400,500,600,700,800,900,300italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+        //<![CDATA[
+        var gtm4wp_datalayer_name = "dataLayer";
+        var dataLayer = dataLayer || [];
+        //]]>
+    </script>
+    <link rel='dns-prefetch' href='//toolbar.qodeinteractive.com' />
+    <link rel='dns-prefetch' href='//maps.googleapis.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Bridge &raquo; Feed" href="https://bridge40.qodeinteractive.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Bridge &raquo; Comments Feed" href="https://bridge40.qodeinteractive.com/comments/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/bridge40.qodeinteractive.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.9"
+            }
+        };
+        ! function(e, a, t) {
+            var n, r, o, i = a.createElement("canvas"),
+                p = i.getContext && i.getContext("2d");
+
+            function s(e, t) {
+                var a = String.fromCharCode;
+                p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+                e = i.toDataURL();
+                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+            }
+
+            function c(e) {
+                var t = a.createElement("script");
+                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+            }
+            for (o = Array("flag", "emoji"), t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                if (!p || !p.fillText) return !1;
+                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+                    case "flag":
+                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+                    case "emoji":
+                        return !s([55357, 56424, 55356, 57342, 8205, 55358, 56605, 8205, 55357, 56424, 55356, 57340], [55357, 56424, 55356, 57342, 8203, 55358, 56605, 8203, 55357, 56424, 55356, 57340])
+                }
+                return !1
+            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+                t.DOMReady = !0
+            }, t.supports.everything || (n = function() {
+                t.readyCallback()
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+                "complete" === a.readyState && t.readyCallback()
+            })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://bridge40.qodeinteractive.com/wp-content/cache/minify/35ded.css" media="all" />
+    <link rel='stylesheet' id='ls-google-fonts-css' href='https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://bridge40.qodeinteractive.com/wp-content/cache/minify/4c431.css" media="all" />
+    <link rel='stylesheet' id='qode_demos_css-css' href='https://toolbar.qodeinteractive.com/_qode_toolbar/assets/css/qode-demos-modules.css?ver=5.3.9' type='text/css' media='all' />
+    <link rel='stylesheet' id='qode_demos_swiper_css-css' href='https://toolbar.qodeinteractive.com/_qode_toolbar/assets/css/swiper.css?ver=5.3.9' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://bridge40.qodeinteractive.com/wp-content/cache/minify/52060.css" media="all" />
+    <!--[if lt IE 9]>
+<link rel='stylesheet' id='vc_lte_ie9-css'  href='https://bridge40.qodeinteractive.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css' type='text/css' media='screen' />
+<![endif]-->
+    <script src="https://bridge40.qodeinteractive.com/wp-content/cache/minify/86870.js"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var LS_Meta = {
+            "v": "5.6.7"
+        };
+        /* ]]> */
+    </script>
+    <script src="https://bridge40.qodeinteractive.com/wp-content/cache/minify/47cc3.js"></script>
+    <meta name="generator" content="Powered by LayerSlider 5.6.7 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+
+    <link rel='https://api.w.org/' href='https://bridge40.qodeinteractive.com/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bridge40.qodeinteractive.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://bridge40.qodeinteractive.com/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.3.9" />
+    <link rel="canonical" href="https://bridge40.qodeinteractive.com/" />
+    <link rel='shortlink' href='https://bridge40.qodeinteractive.com/' />
+    <link rel="alternate" type="application/json+oembed" href="https://bridge40.qodeinteractive.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbridge40.qodeinteractive.com%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://bridge40.qodeinteractive.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbridge40.qodeinteractive.com%2F&#038;format=xml" />
+
+    <script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+        //<![CDATA[
+        var dataLayer_content = {
+            "pagePostType": "frontpage",
+            "pagePostType2": "single-page",
+            "pagePostAuthor": "admin"
+        };
+        dataLayer.push(dataLayer_content); //]]>
+    </script>
+    <script data-cfasync="false">
+        //<![CDATA[
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WCC77WV'); //]]>
+    </script>
+
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1465206458336 {
+            padding-top: 149px !important;
+            padding-bottom: 111px !important;
+        }
+
+        .vc_custom_1464171828330 {
+            padding-bottom: 6px !important;
+        }
+
+        .vc_custom_1464179293604 {
+            padding-top: 86px !important;
+        }
+
+        .vc_custom_1465383517882 {
+            padding-top: 98px !important;
+            padding-bottom: 47px !important;
+        }
+
+        .vc_custom_1464179316241 {
+            padding-top: 100px !important;
+            padding-bottom: 95px !important;
+        }
+    </style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="home page-template page-template-full_width page-template-full_width-php page page-id-5 qi-addons-for-elementor-1.0 ajax_fade page_not_loaded  qode-title-hidden qode_grid_1300 qode-content-sidebar-responsive qode-theme-ver-9.3 wpb-js-composer js-comp-ver-6.0.5 vc_responsive elementor-default elementor-kit-95"
+    itemscope itemtype="http://schema.org/WebPage">
+    <div class="wrapper">
+        <div class="wrapper_inner">
+
+
+            <header class=" scroll_header_top_area  stick transparent scrolled_not_transparent ajax_header_animation page_header">
+                <div class="header_inner clearfix">
+                    <div class="header_top_bottom_holder">
+                        <div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0);'>
+                            <div class="header_inner_left">
+                                <div class="mobile_menu_button">
+                                    <span>
+<span aria-hidden="true" class="qode_icon_font_elegant icon_menu "></span> </span>
+                                </div>
+                                <div class="logo_wrapper">
+                                    <div class="q_logo">
+                                        <a itemprop="url" href="https://bridge40.qodeinteractive.com/">
+<img itemprop="image" class="normal" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/logo.png" alt="Logo" />
+<img itemprop="image" class="light" src="https://bridge40.qodeinteractive.com/wp-content/themes/bridge/img/logo_white.png" alt="Logo" />
+<img itemprop="image" class="dark" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/logo.png" alt="Logo" />
+<img itemprop="image" class="sticky" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/sticky-logo.png" alt="Logo" />
+<img itemprop="image" class="mobile" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/logo.png" alt="Logo" />
+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+                                    <div class="header_bottom_right_widget_holder"><span class='q_social_icon_holder circle_social' data-hover-background-color=#1d1d1d data-hover-border-color=#1d1d1d data-hover-color=#ffffff><a itemprop='url' href='https://www.facebook.com/QodeInteractive/' target='_blank'><span class='fa-stack ' style='background-color: rgba(255,255,255,0.0);border-color: #1d1d1d;border-width: 1px;margin: 0 5px 0 0;font-size: 17px;'><span aria-hidden="true" class="qode_icon_font_elegant social_facebook " style="color: #1d1d1d;font-size: 13px;"></span></span>
+                                        </a>
+                                        </span><span class='q_social_icon_holder circle_social' data-hover-background-color=#1d1d1d data-hover-border-color=#1d1d1d data-hover-color=#ffffff><a itemprop='url' href='https://twitter.com/QodeInteractive' target='_blank'><span class='fa-stack ' style='background-color: rgba(255,255,255,0.0);border-color: #1d1d1d;border-width: 1px;margin: 0 5px 0 0;font-size: 17px;'><span aria-hidden="true" class="qode_icon_font_elegant social_twitter " style="color: #1d1d1d;font-size: 13px;"></span></span>
+                                        </a>
+                                        </span><span class='q_social_icon_holder circle_social' data-hover-background-color=#1d1d1d data-hover-border-color=#1d1d1d data-hover-color=#ffffff><a itemprop='url' href='https://www.instagram.com/qodeinteractive/' target='_blank'><span class='fa-stack ' style='background-color: rgba(255,255,255,0.0);border-color: #1d1d1d;border-width: 1px;margin: 0 0 0 0;font-size: 17px;'><span aria-hidden="true" class="qode_icon_font_elegant social_instagram " style="color: #1d1d1d;font-size: 13px;"></span></span>
+                                        </a>
+                                        </span>
+                                    </div>
+                                    <div class="side_menu_button">
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="main_menu drop_down right">
+                                <ul id="menu-main-menu" class="">
+                                    <li id="nav-menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item anchor-item  narrow"><a href="https://bridge40.qodeinteractive.com/#intro" class=" current "><i class="menu_icon blank fa"></i><span>Home</span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item anchor-item  narrow"><a href="https://bridge40.qodeinteractive.com/#about" class=" current "><i class="menu_icon blank fa"></i><span>Contact</span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item anchor-item  narrow"><a href="https://bridge40.qodeinteractive.com/#portfolio" class=" current "><i class="menu_icon blank fa"></i><span>Business</span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item anchor-item  narrow"><a href="https://bridge40.qodeinteractive.com/#hire" class=" current "><i class="menu_icon blank fa"></i><span>About</span><span class="plus"></span></a></li>
+                                </ul>
+                            </nav>
+                            <nav class="mobile_menu">
+                                <ul id="menu-main-menu-1" class="">
+                                    <li id="mobile-menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item "><a href="https://bridge40.qodeinteractive.com/#intro" class=" current "><span>Intro</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                                    <li id="mobile-menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item "><a href="https://bridge40.qodeinteractive.com/#about" class=" current "><span>About</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                                    <li id="mobile-menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item "><a href="https://bridge40.qodeinteractive.com/#portfolio" class=" current "><span>Portfolio</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                                    <li id="mobile-menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item "><a href="https://bridge40.qodeinteractive.com/#hire" class=" current "><span>Hire me</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <a id='back_to_top' href='#'>
+<span class="fa-stack">
+<i class="fa fa-arrow-up" style=""></i>
+</span>
+</a>
+            <div class="content ">
+                <div class="meta">
+                    <div class="seo_title">Bridge | Demo Site for Developers</div>
+                    <span id="qode_page_id">5</span>
+                    <div class="body_classes">home,page-template,page-template-full_width,page-template-full_width-php,page,page-id-5,qi-addons-for-elementor-1.0,ajax_fade,page_not_loaded,,qode-title-hidden,qode_grid_1300,qode-content-sidebar-responsive,qode-theme-ver-9.3,wpb-js-composer
+                        js-comp-ver-6.0.5,vc_responsive,elementor-default,elementor-kit-95</div>
+                </div>
+                <div class="content_inner  ">
+                    <style type="text/css" data-type="vc_shortcodes-custom-css-5">
+                        .vc_custom_1465206458336 {
+                            padding-top: 149px !important;
+                            padding-bottom: 111px !important;
+                        }
+
+                        .vc_custom_1464171828330 {
+                            padding-bottom: 6px !important;
+                        }
+
+                        .vc_custom_1464179293604 {
+                            padding-top: 86px !important;
+                        }
+
+                        .vc_custom_1465383517882 {
+                            padding-top: 98px !important;
+                            padding-bottom: 47px !important;
+                        }
+
+                        .vc_custom_1464179316241 {
+                            padding-top: 100px !important;
+                            padding-bottom: 95px !important;
+                        }
+                    </style>
+                    <div class="full_width">
+                        <div class="full_width_inner">
+                            <section data-q_id="#intro" data-speed="2" class="parallax_section_holder   qode_full_screen_height_parallax" style=" height:px; background-image:url('https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/adam.jpg');">
+                                <div class="parallax_content left">
+                                    <div class='parallax_section_inner_margin clearfix'>
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class='q_elements_holder one_column responsive_mode_from_768'>
+                                                        <div class='q_elements_item' data-animation='no' style='vertical-align:top;'>
+                                                            <div class='q_elements_item_inner'>
+                                                                <div class='q_elements_item_content q_elements_holder_custom_156979' style='padding:16% 30% 0 0'>
+                                                                    <style type="text/css" data-type="q_elements_custom_padding" scoped>
+                                                                        @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+                                                                            .q_elements_item_content.q_elements_holder_custom_156979 {
+                                                                                padding: 15% 30% 0 0 !important;
+                                                                            }
+                                                                        }
+
+                                                                        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                                                                            .q_elements_item_content.q_elements_holder_custom_156979 {
+                                                                                padding: 18% 50% 16% 0 !important;
+                                                                            }
+                                                                        }
+
+                                                                        @media only screen and (min-width: 600px) and (max-width: 768px) {
+                                                                            .q_elements_item_content.q_elements_holder_custom_156979 {
+                                                                                padding: 18% 50% 16% 0 !important;
+                                                                            }
+                                                                        }
+
+                                                                        @media only screen and (min-width: 480px) and (max-width: 600px) {
+                                                                            .q_elements_item_content.q_elements_holder_custom_156979 {
+                                                                                padding: 21% 23% 14% 0 !important;
+                                                                            }
+                                                                        }
+
+                                                                        @media only screen and (max-width: 480px) {
+                                                                            .q_elements_item_content.q_elements_holder_custom_156979 {
+                                                                                padding: 21% 23% 14% 0 !important;
+                                                                            }
+                                                                        }
+                                                                    </style>
+                                                                    <div class="wpb_text_column wpb_content_element ">
+                                                                        <div class="wpb_wrapper">
+                                                                            <h1>Hi, I am Adam, industry expert developer</h1>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="wpb_text_column wpb_content_element ">
+                                                                        <div class="wpb_wrapper">
+                                                                            <h3>Hi, I am Adam, an industry expert</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div data-q_id="#about" class="vc_row wpb_row section vc_row-fluid  vc_custom_1465206458336 grid_section" style=' text-align:left;'>
+                                <div class=" section_inner clearfix">
+                                    <div class='section_inner_margin clearfix'>
+                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h3><span style="color: #f0304a;">I am a curious individual</span> who is passionate about science, math, and technology. I am a habitual knowledge seeker who loves knowing how things work. In my
+                                                                spare time I like to bike and play video and board games.</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 70px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="vc_empty_space" style="height: 3px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class='q_progress_bar'>
+                                                        <h5 class='progress_title_holder clearfix' style='color: #1d1d1d;'><span class='progress_title'><span>UI/UX Design</span></span><span class='progress_number' style='color: #1d1d1d;'><span>0</span>%</span>
+                                                        </h5>
+                                                        <div class='progress_content_outer' style='height: 5px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;background-color: #f2f2f2;'>
+                                                            <div data-percentage='28' class='progress_content' style='height: 5px;background-color: #f0304a;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 6px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class='q_progress_bar'>
+                                                        <h5 class='progress_title_holder clearfix' style='color: #1d1d1d;'><span class='progress_title'><span>Development</span></span><span class='progress_number' style='color: #1d1d1d;'><span>0</span>%</span>
+                                                        </h5>
+                                                        <div class='progress_content_outer' style='height: 5px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;background-color: #f2f2f2;'>
+                                                            <div data-percentage='52' class='progress_content' style='height: 5px;background-color: #f0304a;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 6px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class='q_progress_bar'>
+                                                        <h5 class='progress_title_holder clearfix' style='color: #1d1d1d;'><span class='progress_title'><span>Sound Effects</span></span><span class='progress_number' style='color: #1d1d1d;'><span>0</span>%</span>
+                                                        </h5>
+                                                        <div class='progress_content_outer' style='height: 5px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;background-color: #f2f2f2;'>
+                                                            <div data-percentage='70' class='progress_content' style='height: 5px;background-color: #f0304a;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 6px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class='q_progress_bar'>
+                                                        <h5 class='progress_title_holder clearfix' style='color: #1d1d1d;'><span class='progress_title'><span>CSS/HTML5</span></span><span class='progress_number' style='color: #1d1d1d;'><span>0</span>%</span>
+                                                        </h5>
+                                                        <div class='progress_content_outer' style='height: 5px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;background-color: #f2f2f2;'>
+                                                            <div data-percentage='87' class='progress_content' style='height: 5px;background-color: #f0304a;'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 6px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class='q_progress_bar'>
+                                                        <h5 class='progress_title_holder clearfix' style='color: #1d1d1d;'><span class='progress_title'><span>Game Design</span></span><span class='progress_number' style='color: #1d1d1d;'><span>0</span>%</span>
+                                                        </h5>
+                                                        <div class='progress_content_outer' style='height: 5px;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;background-color: #f2f2f2;'>
+                                                            <div data-percentage='87' class='progress_content' style='height: 5px;background-color: #f0304a;'></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row section vc_row-fluid  vc_custom_1464171828330 grid_section" style=' text-align:left;'>
+                                <div class=" section_inner clearfix">
+                                    <div class='section_inner_margin clearfix'>
+                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper"><span data-type="normal" data-hover-icon-color="#f0304a" class="qode_icon_shortcode  q_font_awsome_icon fa-lg  " style="margin: 0 0 0 -20px; "><i class="qodef-icon-linea-icon icon-basic-bolt qode_icon_element" style="font-size: 80px;color: #282828;"></i></span>
+                                                    <div class="vc_empty_space" style="height: 26px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>I have worked for 3 years as a high quality support agent for various clients in multiple languages.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 60px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper"><span data-type="normal" data-hover-icon-color="#f0304a" class="qode_icon_shortcode  q_font_awsome_icon fa-lg  " style="margin: 0 0 0 0; "><i class="qodef-icon-linea-icon icon-basic-keyboard qode_icon_element" style="font-size: 80px;color: #282828;"></i></span>
+                                                    <div class="vc_empty_space" style="height: 26px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>I am never late and I am always very punctual with my deadlines.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 86px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper"><span data-type="normal" data-hover-icon-color="#f0304a" class="qode_icon_shortcode  q_font_awsome_icon fa-lg  " style="margin: 0 0 0 0; "><i class="qodef-icon-linea-icon icon-basic-life-buoy qode_icon_element" style="font-size: 80px;color: #282828;"></i></span>
+                                                    <div class="vc_empty_space" style="height: 26px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>I have worked for 3 years as a high quality support agent for various clients in multiple languages.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 60px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper"><span data-type="normal" data-hover-icon-color="#f0304a" class="qode_icon_shortcode  q_font_awsome_icon fa-lg  " style="margin: 0 0 0 0; "><i class="qodef-icon-linea-icon icon-basic-alarm qode_icon_element" style="font-size: 80px;color: #282828;"></i></span>
+                                                    <div class="vc_empty_space" style="height: 26px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>I am never late and I am always very punctual with my deadlines.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 60px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row section vc_row-fluid  grid_section" style=' text-align:left;'>
+                                <div class=" section_inner clearfix">
+                                    <div class='section_inner_margin clearfix'>
+                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="q_counter_holder  left" style=""><span class="counter  zero" style="color: #282828;font-size: 70px;font-weight: 300;">56</span></div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>I&#8217;m looking to learn new technology. My interests are in web development, databases, &amp; mobile apps.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 35px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="q_counter_holder  left" style=""><span class="counter  zero" style="color: #282828;font-size: 70px;font-weight: 300;">380</span></div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>I am ready to move to your company’s city if needed.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 84px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="q_counter_holder  left" style=""><span class="counter  zero" style="color: #282828;font-size: 70px;font-weight: 300;">7</span></div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>I have been a team leader for 2 years at the last position and am looking for a similar position.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 35px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="q_counter_holder  left" style=""><span class="counter  zero" style="color: #282828;font-size: 70px;font-weight: 300;">930</span></div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>I&#8217;m looking to learn new technology. My interests are in web development, databases, &amp; mobile apps.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 35px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-q_id="#portfolio" class="vc_row wpb_row section vc_row-fluid  vc_custom_1464179293604 grid_section" style=' text-align:left;'>
+                                <div class=" section_inner clearfix">
+                                    <div class='section_inner_margin clearfix'>
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h2>My finest works</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 26px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h3>Here is a selection of my best projects for worldwide clients</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 61px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class='projects_holder_outer v3 portfolio_with_space portfolio_standard '>
+                                                        <div class='projects_holder portfolio_main_holder clearfix v3 standard portfolio_square_image slide_from_left'>
+                                                            <article class='mix portfolio_category_3 ' style=''>
+                                                                <div class="item_holder thin_plus_only">
+                                                                    <div class="text_holder">
+                                                                        <div class="text_holder_outer">
+                                                                            <div class="text_holder_inner"><span class="thin_plus_only_icon">+</span></div>
+                                                                        </div>
+                                                                    </div><a itemprop="url" class="portfolio_link_class" title="Vimeo FX Showreel" href="https://bridge40.qodeinteractive.com/portfolio_page/vimeo-fx-showreel/"></a>
+                                                                    <div style="background-color: rgba(240,48,74,0.9)"
+                                                                        class="portfolio_shader"></div>
+                                                                    <div class="image_holder"><span class="image"><img width="570" height="570" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-1-570x570.png" class="attachment-portfolio-square size-portfolio-square wp-post-image" alt="a" srcset="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-1-570x570.png 570w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-1-150x150.png 150w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-1-300x300.png 300w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-1.png 600w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-1-500x500.png 500w" sizes="(max-width: 570px) 100vw, 570px" /></span></div>
+                                                                </div>
+                                                                <div class='portfolio_description text_align_left'>
+                                                                    <h5 itemprop="headings" class="portfolio_title entry_title"><a itemprop="url" href="https://bridge40.qodeinteractive.com/portfolio_page/vimeo-fx-showreel/" target="_self">Vimeo FX Showreel</a></h5><span class="project_category">Web Design</span></div>
+                                                            </article>
+                                                            <article class='mix portfolio_category_3 ' style=''>
+                                                                <div class="item_holder thin_plus_only">
+                                                                    <div class="text_holder">
+                                                                        <div class="text_holder_outer">
+                                                                            <div class="text_holder_inner"><span class="thin_plus_only_icon">+</span></div>
+                                                                        </div>
+                                                                    </div><a itemprop="url" class="portfolio_link_class" title="Venice Art Pavilion" href="https://bridge40.qodeinteractive.com/portfolio_page/venice-art-pavilion/"></a>
+                                                                    <div style="background-color: rgba(240,48,74,0.9)"
+                                                                        class="portfolio_shader"></div>
+                                                                    <div class="image_holder"><span class="image"><img width="570" height="570" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-2-570x570.png" class="attachment-portfolio-square size-portfolio-square wp-post-image" alt="a" srcset="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-2-570x570.png 570w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-2-150x150.png 150w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-2-300x300.png 300w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-2.png 600w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-2-500x500.png 500w" sizes="(max-width: 570px) 100vw, 570px" /></span></div>
+                                                                </div>
+                                                                <div class='portfolio_description text_align_left'>
+                                                                    <h5 itemprop="headings" class="portfolio_title entry_title"><a itemprop="url" href="https://bridge40.qodeinteractive.com/portfolio_page/venice-art-pavilion/" target="_self">Venice Art Pavilion</a></h5><span class="project_category">Web Design</span></div>
+                                                            </article>
+                                                            <article class='mix portfolio_category_3 ' style=''>
+                                                                <div class="item_holder thin_plus_only">
+                                                                    <div class="text_holder">
+                                                                        <div class="text_holder_outer">
+                                                                            <div class="text_holder_inner"><span class="thin_plus_only_icon">+</span></div>
+                                                                        </div>
+                                                                    </div><a itemprop="url" class="portfolio_link_class" title="Berlin Design Week" href="https://bridge40.qodeinteractive.com/portfolio_page/berlin-design-week/"></a>
+                                                                    <div style="background-color: rgba(240,48,74,0.9)"
+                                                                        class="portfolio_shader"></div>
+                                                                    <div class="image_holder"><span class="image"><img width="570" height="570" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-3-570x570.png" class="attachment-portfolio-square size-portfolio-square wp-post-image" alt="a" srcset="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-3-570x570.png 570w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-3-150x150.png 150w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-3-300x300.png 300w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-3.png 600w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-3-500x500.png 500w" sizes="(max-width: 570px) 100vw, 570px" /></span></div>
+                                                                </div>
+                                                                <div class='portfolio_description text_align_left'>
+                                                                    <h5 itemprop="headings" class="portfolio_title entry_title"><a itemprop="url" href="https://bridge40.qodeinteractive.com/portfolio_page/berlin-design-week/" target="_self">Berlin Design Week</a></h5><span class="project_category">Web Design</span></div>
+                                                            </article>
+                                                            <article class='mix portfolio_category_3 ' style=''>
+                                                                <div class="item_holder thin_plus_only">
+                                                                    <div class="text_holder">
+                                                                        <div class="text_holder_outer">
+                                                                            <div class="text_holder_inner"><span class="thin_plus_only_icon">+</span></div>
+                                                                        </div>
+                                                                    </div><a itemprop="url" class="portfolio_link_class" title="Stockholm Fashion" href="https://bridge40.qodeinteractive.com/portfolio_page/stockholm-fashion/"></a>
+                                                                    <div style="background-color: rgba(240,48,74,0.9)"
+                                                                        class="portfolio_shader"></div>
+                                                                    <div class="image_holder"><span class="image"><img width="570" height="570" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-4-570x570.png" class="attachment-portfolio-square size-portfolio-square wp-post-image" alt="a" srcset="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-4-570x570.png 570w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-4-150x150.png 150w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-4-300x300.png 300w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-4.png 600w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-4-500x500.png 500w" sizes="(max-width: 570px) 100vw, 570px" /></span></div>
+                                                                </div>
+                                                                <div class='portfolio_description text_align_left'>
+                                                                    <h5 itemprop="headings" class="portfolio_title entry_title"><a itemprop="url" href="https://bridge40.qodeinteractive.com/portfolio_page/stockholm-fashion/" target="_self">Stockholm Fashion</a></h5><span class="project_category">Web Design</span></div>
+                                                            </article>
+                                                            <article class='mix portfolio_category_3 ' style=''>
+                                                                <div class="item_holder thin_plus_only">
+                                                                    <div class="text_holder">
+                                                                        <div class="text_holder_outer">
+                                                                            <div class="text_holder_inner"><span class="thin_plus_only_icon">+</span></div>
+                                                                        </div>
+                                                                    </div><a itemprop="url" class="portfolio_link_class" title="Last Iceland Sunshine" href="https://bridge40.qodeinteractive.com/portfolio_page/last-iceland-sunshine/"></a>
+                                                                    <div style="background-color: rgba(240,48,74,0.9)"
+                                                                        class="portfolio_shader"></div>
+                                                                    <div class="image_holder"><span class="image"><img width="570" height="570" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-5-570x570.png" class="attachment-portfolio-square size-portfolio-square wp-post-image" alt="a" srcset="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-5-570x570.png 570w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-5-150x150.png 150w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-5-300x300.png 300w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-5.png 600w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-5-500x500.png 500w" sizes="(max-width: 570px) 100vw, 570px" /></span></div>
+                                                                </div>
+                                                                <div class='portfolio_description text_align_left'>
+                                                                    <h5 itemprop="headings" class="portfolio_title entry_title"><a itemprop="url" href="https://bridge40.qodeinteractive.com/portfolio_page/last-iceland-sunshine/" target="_self">Last Iceland Sunshine</a></h5><span class="project_category">Web Design</span></div>
+                                                            </article>
+                                                            <article class='mix portfolio_category_3 ' style=''>
+                                                                <div class="item_holder thin_plus_only">
+                                                                    <div class="text_holder">
+                                                                        <div class="text_holder_outer">
+                                                                            <div class="text_holder_inner"><span class="thin_plus_only_icon">+</span></div>
+                                                                        </div>
+                                                                    </div><a itemprop="url" class="portfolio_link_class" title="Art &#038; Design Blvd" href="https://bridge40.qodeinteractive.com/portfolio_page/art-design-blvd/"></a>
+                                                                    <div style="background-color: rgba(240,48,74,0.9)"
+                                                                        class="portfolio_shader"></div>
+                                                                    <div class="image_holder"><span class="image"><img width="570" height="570" src="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-6-570x570.png" class="attachment-portfolio-square size-portfolio-square wp-post-image" alt="a" srcset="https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-6-570x570.png 570w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-6-150x150.png 150w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-6-300x300.png 300w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-6.png 600w, https://bridge40.qodeinteractive.com/wp-content/uploads/2016/05/p-6-500x500.png 500w" sizes="(max-width: 570px) 100vw, 570px" /></span></div>
+                                                                </div>
+                                                                <div class='portfolio_description text_align_left'>
+                                                                    <h5 itemprop="headings" class="portfolio_title entry_title"><a itemprop="url" href="https://bridge40.qodeinteractive.com/portfolio_page/art-design-blvd/" target="_self">Art &#038; Design Blvd</a></h5><span class="project_category">Web Design</span></div>
+                                                            </article>
+                                                            <div class='filler'></div>
+                                                            <div class='filler'></div>
+                                                            <div class='filler'></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row section vc_row-fluid  vc_custom_1465383517882 grid_section" style=' text-align:left;'>
+                                <div class=" section_inner clearfix">
+                                    <div class='section_inner_margin clearfix'>
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h2>Latest tweets</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 26px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h3>Here is a selection of my best projects for worldwide clients</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 83px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="qode-twitter-feed-shortcode">
+                                                        <div class="qode-tfs-inner clearfix">
+                                                            <div class="qode-tfs-item">
+                                                                <div class="qode-tfs-item-inner">
+                                                                    <div class="qode-tfs-image-info-holder clearfix">
+                                                                        <div class="qode-tfs-image"><img src="https://pbs.twimg.com/profile_images/1131149662457610242/AtaeyjSd_bigger.png" alt="" /></div>
+                                                                        <div class="qode-tfs-info-holder">
+                                                                            <h5 class="qode-tfs-author-name" style="color:#f0304a">Qode Interactive</h5>
+                                                                            <div class="qode-tfs-info" style="color:#282828"><span class="qode-tfs-author-screen-name">@QodeInteractive</span><span class="qode-tfs-time">Sep 26</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qode-tfs-text" style="color:#282828">RT <a target="_blank" href="https://twitter.com/varolwork">@varolwork</a>: Qi, Ücretsiz SEO Uyumlu WordPress Teması <a target="_blank" href="https://t.co/WUOhw4S3DY">https://t.co/WUOhw4S3DY</a>                                                                        <a target="_blank" href="https://twitter.com/YouTube">@YouTube</a> aracılığıyla</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="qode-tfs-item">
+                                                                <div class="qode-tfs-item-inner">
+                                                                    <div class="qode-tfs-image-info-holder clearfix">
+                                                                        <div class="qode-tfs-image"><img src="https://pbs.twimg.com/profile_images/1131149662457610242/AtaeyjSd_bigger.png" alt="" /></div>
+                                                                        <div class="qode-tfs-info-holder">
+                                                                            <h5 class="qode-tfs-author-name" style="color:#f0304a">Qode Interactive</h5>
+                                                                            <div class="qode-tfs-info" style="color:#282828"><span class="qode-tfs-author-screen-name">@QodeInteractive</span><span class="qode-tfs-time">Sep 26</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qode-tfs-text" style="color:#282828"><a target="_blank" href="https://twitter.com/liu_gazza">@liu_gazza</a> nothing to do with domain for sure, but will have to understand better when activation problem happens</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="qode-tfs-item">
+                                                                <div class="qode-tfs-item-inner">
+                                                                    <div class="qode-tfs-image-info-holder clearfix">
+                                                                        <div class="qode-tfs-image"><img src="https://pbs.twimg.com/profile_images/1131149662457610242/AtaeyjSd_bigger.png" alt="" /></div>
+                                                                        <div class="qode-tfs-info-holder">
+                                                                            <h5 class="qode-tfs-author-name" style="color:#f0304a">Qode Interactive</h5>
+                                                                            <div class="qode-tfs-info" style="color:#282828"><span class="qode-tfs-author-screen-name">@QodeInteractive</span><span class="qode-tfs-time">Sep 26</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qode-tfs-text" style="color:#282828"><a target="_blank" href="https://twitter.com/liu_gazza">@liu_gazza</a> Hi, can you please give us more details in DM so we can understand better a problem you have.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="qode-tfs-item">
+                                                                <div class="qode-tfs-item-inner">
+                                                                    <div class="qode-tfs-image-info-holder clearfix">
+                                                                        <div class="qode-tfs-image"><img src="https://pbs.twimg.com/profile_images/1131149662457610242/AtaeyjSd_bigger.png" alt="" /></div>
+                                                                        <div class="qode-tfs-info-holder">
+                                                                            <h5 class="qode-tfs-author-name" style="color:#f0304a">Qode Interactive</h5>
+                                                                            <div class="qode-tfs-info" style="color:#282828"><span class="qode-tfs-author-screen-name">@QodeInteractive</span><span class="qode-tfs-time">Sep 25</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qode-tfs-text" style="color:#282828">Thinking of transforming your #WordPress site into an application? Then check out our list of the best #plugins tha… <a target="_blank" href="https://t.co/PQVW2Xp2Nr">https://t.co/PQVW2Xp2Nr</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="qode-tfs-item">
+                                                                <div class="qode-tfs-item-inner">
+                                                                    <div class="qode-tfs-image-info-holder clearfix">
+                                                                        <div class="qode-tfs-image"><img src="https://pbs.twimg.com/profile_images/1131149662457610242/AtaeyjSd_bigger.png" alt="" /></div>
+                                                                        <div class="qode-tfs-info-holder">
+                                                                            <h5 class="qode-tfs-author-name" style="color:#f0304a">Qode Interactive</h5>
+                                                                            <div class="qode-tfs-info" style="color:#282828"><span class="qode-tfs-author-screen-name">@QodeInteractive</span><span class="qode-tfs-time">Sep 25</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qode-tfs-text" style="color:#282828">Deactivating #plugins within the #WordPress dashboard is simple. But what happens when you get locked out of your a… <a target="_blank" href="https://t.co/GvDjRz542h">https://t.co/GvDjRz542h</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="qode-tfs-item">
+                                                                <div class="qode-tfs-item-inner">
+                                                                    <div class="qode-tfs-image-info-holder clearfix">
+                                                                        <div class="qode-tfs-image"><img src="https://pbs.twimg.com/profile_images/1131149662457610242/AtaeyjSd_bigger.png" alt="" /></div>
+                                                                        <div class="qode-tfs-info-holder">
+                                                                            <h5 class="qode-tfs-author-name" style="color:#f0304a">Qode Interactive</h5>
+                                                                            <div class="qode-tfs-info" style="color:#282828"><span class="qode-tfs-author-screen-name">@QodeInteractive</span><span class="qode-tfs-time">Sep 25</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qode-tfs-text" style="color:#282828">If you plan to share content that isn’t yours on your #site, embedding it using #iframes is one of the safest ways… <a target="_blank" href="https://t.co/KQUQdkWE1M">https://t.co/KQUQdkWE1M</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-q_id="#hire" class="vc_row wpb_row section vc_row-fluid  vc_custom_1464179316241 grid_section" style=' text-align:left;'>
+                                <div class=" section_inner clearfix">
+                                    <div class='section_inner_margin clearfix'>
+                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h2>Hire me</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 23px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h3>I am a curious individual who is passionate about science, math, and technology. I am a habitual knowledge seeker who loves knowing how things work.</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 68px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <span data-type="square" data-hover-bg-color="#1d1d1d" data-hover-icon-color="#ffffff" class="qode_icon_shortcode fa-stack q_font_awsome_icon_square fa-lg  " style="background-color: #ffffff;border: 1px solid #1d1d1d;margin: 0 8px 0 0;font-size: 15px;font-size: 26px;border-radius: 100px; "><a itemprop="url" href="https://www.facebook.com/QodeInteractive/" target="_blank"><span aria-hidden="true" class="qode_icon_font_elegant social_facebook qode_icon_element" style="font-size: 15px;color: #1d1d1d;"></span></a>
+                                                    </span><span data-type="square" data-hover-bg-color="#1d1d1d" data-hover-icon-color="#ffffff" class="qode_icon_shortcode fa-stack q_font_awsome_icon_square fa-lg  " style="background-color: #ffffff;border: 1px solid #1d1d1d;margin: 0 8px 0 0;font-size: 15px;font-size: 26px;border-radius: 100px; "><a itemprop="url" href="https://twitter.com/QodeInteractive" target="_blank"><span aria-hidden="true" class="qode_icon_font_elegant social_twitter qode_icon_element" style="font-size: 15px;color: #1d1d1d;"></span></a>
+                                                    </span><span data-type="square" data-hover-bg-color="#1d1d1d" data-hover-icon-color="#ffffff" class="qode_icon_shortcode fa-stack q_font_awsome_icon_square fa-lg  " style="background-color: #ffffff;border: 1px solid #1d1d1d;margin: 0 0 0 0;font-size: 15px;font-size: 26px;border-radius: 100px; "><a itemprop="url" href="https://www.instagram.com/qodeinteractive/" target="_blank"><span aria-hidden="true" class="qode_icon_font_elegant social_instagram qode_icon_element" style="font-size: 15px;color: #1d1d1d;"></span></a>
+                                                    </span>
+                                                    <div class="vc_empty_space" style="height: 65px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="vc_empty_space" style="height: 8px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div role="form" class="wpcf7" id="wpcf7-f39-p5-o1" lang="en-US" dir="ltr">
+                                                        <div class="screen-reader-response"></div>
+                                                        <form action="/?_ga=2.197619244.2084273415.1632597517-1954302747.1630519524#wpcf7-f39-p5-o1" method="post" class="wpcf7-form cf7_custom_style_1" novalidate="novalidate">
+                                                            <div style="display: none;">
+                                                                <input type="hidden" name="_wpcf7" value="39" />
+                                                                <input type="hidden" name="_wpcf7_version" value="5.1.6" />
+                                                                <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f39-p5-o1" />
+                                                                <input type="hidden" name="_wpcf7_container_post" value="5" />
+                                                            </div>
+                                                            <p><span class="wpcf7-form-control-wrap full-name"><input type="text" name="full-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your full name here" /></span></p>
+                                                            <p><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Your e-mail address" /></span></p>
+                                                            <p><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Write your message here..."></textarea></span></p>
+                                                            <p><input type="submit" value="Send message" class="wpcf7-form-control wpcf7-submit" /></p>
+                                                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 65px"><span class="vc_empty_space_inner">
+<span class="empty_space_image"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_bottom">
+                        <div class="widget widget_text">
+                            <div class="textwidget">
+                                <div style="padding: 52px; text-align: center; background-color: #f2f2f2;">
+                                    <p>My <span style="color: #f0304a;">Instagram</span> feed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget widget_qode_instagram_widget">
+                            <h5></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner clearfix">
+                    <div class="footer_top_holder">
+                        <div class="footer_top">
+                            <div class="container">
+                                <div class="container_inner">
+                                    <div id="text-3" class="widget widget_text">
+                                        <div class="textwidget"><span style="color: #f0304a;">&copy; Copyright <a href="https://qodeinteractive.com/" rel="nofollow noopener noreferrer" target="_blank">Qode Interactive</a></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="qode-demos-toolbar" data-demo="bridge40.qodeinteractive.com"></div>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCC77WV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wpcf7 = {
+            "apiSettings": {
+                "root": "https:\/\/bridge40.qodeinteractive.com\/wp-json\/contact-form-7\/v1",
+                "namespace": "contact-form-7\/v1"
+            },
+            "cached": "1"
+        };
+        /* ]]> */
+    </script>
+    <script src="https://bridge40.qodeinteractive.com/wp-content/cache/minify/0fef6.js"></script>
+    <script type='text/javascript' src='https://toolbar.qodeinteractive.com/_qode_toolbar/assets/js/jquery.lazy.min.js?ver=5.3.9'></script>
+    <script type='text/javascript' src='https://toolbar.qodeinteractive.com/_qode_toolbar/assets/js/qode-demos-modules.js?ver=5.3.9'></script>
+    <script type='text/javascript' src='https://toolbar.qodeinteractive.com/_qode_toolbar/assets/js/swiper.min.js?ver=5.3.9'></script>
+    <script src="https://bridge40.qodeinteractive.com/wp-content/cache/minify/a39a9.js"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var qodefGlobal = {
+            "vars": {
+                "adminBarHeight": 0,
+                "iconArrowLeft": "<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0.5\" y1=\"16\" x2=\"33.5\" y2=\"16\"\/><line x1=\"0.3\" y1=\"16.5\" x2=\"16.2\" y2=\"0.7\"\/><line x1=\"0\" y1=\"15.4\" x2=\"16.2\" y2=\"31.6\"\/><\/svg>",
+                "iconArrowRight": "<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0\" y1=\"16\" x2=\"33\" y2=\"16\"\/><line x1=\"17.3\" y1=\"0.7\" x2=\"33.2\" y2=\"16.5\"\/><line x1=\"17.3\" y1=\"31.6\" x2=\"33.5\" y2=\"15.4\"\/><\/svg>",
+                "iconClose": "<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 9.1 9.1\" xml:space=\"preserve\"><g><path d=\"M8.5,0L9,0.6L5.1,4.5L9,8.5L8.5,9L4.5,5.1L0.6,9L0,8.5L4,4.5L0,0.6L0.6,0L4.5,4L8.5,0z\"\/><\/g><\/svg>"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script src="https://bridge40.qodeinteractive.com/wp-content/cache/minify/d91e2.js"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var qodeLike = {
+            "ajaxurl": "https:\/\/bridge40.qodeinteractive.com\/wp-admin\/admin-ajax.php"
+        };
+        /* ]]> */
+    </script>
+    <script src="https://bridge40.qodeinteractive.com/wp-content/cache/minify/bb171.js"></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?ver=5.3.9'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var no_ajax_obj = {
+            "no_ajax_pages": ["", "https:\/\/bridge40.qodeinteractive.com\/wp-login.php?action=logout&_wpnonce=a651185ddc"]
+        };
+        /* ]]> */
+    </script>
+    <script src="https://bridge40.qodeinteractive.com/wp-content/cache/minify/27cec.js"></script>
+</body>
+
+</html>

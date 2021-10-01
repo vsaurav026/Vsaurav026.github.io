@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="wp-content/themes/bridge/img/favicon.ico">
+    <link rel="apple-touch-icon" href="wp-content/themes/bridge/img/favicon.ico" />
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://bridge382.qodeinteractive.com/xmlrpc.php" />
+    <title>BIG O FARM</title>
+    <link rel='dns-prefetch' href='//toolbar.qodeinteractive.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Bridge &raquo; Feed" href="https://bridge382.qodeinteractive.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Bridge &raquo; Comments Feed" href="https://bridge382.qodeinteractive.com/comments/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/bridge382.qodeinteractive.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.7"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(e, a, t) {
+            var n, r, o, i = a.createElement("canvas"),
+                p = i.getContext && i.getContext("2d");
+
+            function s(e, t) {
+                var a = String.fromCharCode;
+                p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+                e = i.toDataURL();
+                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+            }
+
+            function c(e) {
+                var t = a.createElement("script");
+                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+            }
+            for (o = Array("flag", "emoji"), t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                if (!p || !p.fillText) return !1;
+                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+                    case "flag":
+                        return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55646, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+                    case "emoji":
+                        return !s([55357, 56424, 55356, 57342, 8205, 55358, 56605, 8205, 55357, 56424, 55356, 57340], [55357, 56424, 55356, 57342, 8203, 55358, 56605, 8203, 55357, 56424, 55356, 57340])
+                }
+                return !1
+            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+                t.DOMReady = !0
+            }, t.supports.everything || (n = function() {
+                t.readyCallback()
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+                "complete" === a.readyState && t.readyCallback()
+            })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+        
+        .elementor-text-editor p {
+            margin: 34px 0 0 0;
+            /* border: solid; */
+            padding: 1px 4px 0 60px;
+        }
+        /* border */
+        
+        .sb {
+            transition: box-shadow .3s;
+            width: 300px;
+            height: auto;
+            margin: 50px 0 0 13;
+            border-radius: 10px;
+            border: solid #ccc;
+            background: #fff;
+            float: left;
+        }
+        
+        .sb2 {
+            padding: 8px;
+            border-radius: 10px;
+            background-color: wheat;
+            font-weight: bold;
+        }
+    </style>
+
+    <link rel="stylesheet" href="wp-content/cache/minify/7de6a.css" media="all" />
+    <link rel='stylesheet' id='qode_demos_css-css' href='https://toolbar.qodeinteractive.com/_qode_toolbar/assets/css/qode-demos-modules.css?ver=5.4.7' type='text/css' media='all' />
+    <link rel="stylesheet" href="wp-content/cache/minify/edd85.css" media="all" />
+    <style id='rs-plugin-settings-inline-css' type='text/css'>
+        #rs-demo-id {}
+    </style>
+    <link rel="stylesheet" href="wp-content/cache/minify/df2f3.css" media="all" />
+    <style id='bridge-stylesheet-inline-css' type='text/css'>
+        .page-id-90.disabled_footer_top .footer_top_holder,
+        .page-id-90.disabled_footer_bottom .footer_bottom_holder {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="wp-content/cache/minify/55c9c.css" media="all" />
+    <style id='bridge-style-dynamic-responsive-inline-css' type='text/css'>
+        .testimonials_c_holder .testimonial_content_inner {
+            text-align: left;
+        }
+        
+        .testimonials_c_holder .testimonial_content_inner .testimonial_title_holder {
+            margin: 0 0 12px;
+        }
+        
+        .testimonials_c_holder .testimonial_content_inner .testimonial_text_inner .testimonial_author {
+            margin-top: 26px;
+        }
+        
+        .wrapper_inner {
+            position: relative;
+        }
+        
+        .wrapper_inner:before,
+        .wrapper_inner:after {
+            content: '';
+            position: absolute;
+            left: 90px;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #e6e6e6;
+            z-index: 9999;
+            pointer-event: none;
+        }
+        
+        .wrapper_inner:after {
+            left: auto;
+            right: 90px;
+        }
+        
+        @media only screen and (min-width: 1001px) {
+            .header_bottom {
+                padding: 0 23px;
+            }
+        }
+        
+        header .header_inner_left {
+            left: 14px;
+        }
+        
+        .testimonials_c_holder .flex-control-nav {
+            margin-top: 0;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .testimonials_c_holder .testimonial_content_inner {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        
+        footer .footer_col1 .textwidget p {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 14px;
+        }
+        
+        footer .footer_col1 .textwidget p:last-child {
+            margin-right: 0;
+        }
+        
+        footer .footer_col1 .widget_text p img {
+            display: block;
+        }
+        
+        .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit,
+        .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]) {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            height: 42px;
+            padding-top: 7px;
+        }
+        
+        @media only screen and (max-width: 1024px) {
+            .wrapper_inner:before,
+            .wrapper_inner:after {
+                display: none;
+            }
+        }
+        
+        nav.main_menu ul li a span.underline_dash,
+        nav.vertical_menu ul li a span.underline_dash {
+            bottom: -5px;
+        }
+        
+        header:not(.with_hover_bg_color) nav.main_menu>ul>li:hover>a {
+            opacity: 1;
+        }
+        
+        .testimonials_c_holder .testimonial_content_inner {
+            padding: 60px 42px 60px 33px;
+            position: relative;
+        }
+        
+        .testimonials_c_holder .testimonial_content_inner:before {
+            content: '“';
+            position: absolute;
+            top: 65px;
+            left: 0;
+            font-size: 30px;
+            color: #323232;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+        
+        .footer_top .q_social_icon_holder:hover i.simple_social {
+            color: #636363 !important;
+        }
+        
+        #back_to_top span i,
+        #back_to_top span span {
+            font-size: 18px;
+        }
+        
+        #back_to_top span i,
+        #back_to_top span span {
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        #back_to_top:hover span i,
+        #back_to_top:hover span span {
+            transform: translateY(-2px);
+        }
+        
+        .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea {
+            margin-bottom: -7px;
+        }
+        
+        footer .footer_col1 .textwidget {
+            white-space: nowrap
+        }
+        
+        .side_menu .textwidget p {
+            max-width: 57%;
+            margin: 0 auto;
+        }
+        
+        .side_menu_button a.qode-side-menu-button-svg {
+            position: relative;
+            left: -9px;
+            top: 1px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .side_menu_button>a {
+                display: none;
+            }
+        }
+        
+        .right_side_menu_opened .wrapper {
+            left: 0;
+        }
+    </style>
+    <link rel='stylesheet' id='bridge-style-handle-google-fonts-css' href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C300italic%2C400italic%2C700italic%7COpen+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0.0'
+        type='text/css' media='all' />
+    <link rel="stylesheet" href="wp-content/cache/minify/ad2a5.css" media="all" />
+    <script src="wp-content/cache/minify/272c6.js"></script>
+    <link rel='https://api.w.org/' href='wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bridge382.qodeinteractive.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://bridge382.qodeinteractive.com/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.4.7" />
+    <link rel="canonical" href="https://bridge382.qodeinteractive.com/books/" />
+    <link rel='shortlink' href='https://bridge382.qodeinteractive.com/?p=90' />
+    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbridge382.qodeinteractive.com%2Fbooks%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbridge382.qodeinteractive.com%2Fbooks%2F&#038;format=xml" />
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <meta name="generator" content="Powered by Slider Revolution 6.2.15 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            //window.requestAnimationFrame(function() {				 
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                    newh;
+                pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+                e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                if (e.layout === "fullscreen" || e.l === "fullscreen")
+                    newh = Math.max(e.mh, window.RSIH);
+                else {
+                    e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                    for (var i in e.rl)
+                        if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+                    e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                    e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                    for (var i in e.rl)
+                        if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+                    var nl = new Array(e.rl.length),
+                        ix = 0,
+                        sl;
+                    e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                    e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                    e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                    e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                    for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                    sl = nl[0];
+                    for (var i in nl)
+                        if (sl > nl[i] && nl[i] > 0) {
+                            sl = nl[i];
+                            ix = i;
+                        }
+                    var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+                    newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+                }
+                if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
+                document.getElementById(e.c).height = newh + "px";
+                window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
+            } catch (e) {
+                console.log("Failure at Presize of Slider:" + e)
+            }
+            //});
+        };
+    </script>
+</head>
+
+<body class="page-template page-template-full_width page-template-full_width-php page page-id-90 bridge-core-2.3.5 qi-addons-for-elementor-1.0  qode-title-hidden qode_grid_1300 side_menu_slide_from_right footer_responsive_adv qode-overridden-elementors-fonts qode-theme-ver-22.1 qode-theme-bridge disabled_footer_bottom elementor-default elementor-kit-9 elementor-page elementor-page-90"
+    itemscope itemtype="http://schema.org/WebPage">
+    <section class="side_menu right dark side_area_alignment_center">
+        <a href="#" target="_self" class="close_side_menu"></a>
+        <div id="media_image-2" class="widget widget_media_image posts_holder"><img width="74" height="74" src="pics\temp.jpeg" class="image wp-image-165  attachment-full size-full" alt="h" style="max-width: 100%; height: auto;" /></div>
+        <div class="widget qode_separator_widget" style="margin-bottom: -27px;"></div>
+        <div id="text-4" class="widget widget_text posts_holder">
+            <div class="textwidget">
+                <h5 style="color: #323232;">Brian Chase</h5>
+            </div>
+        </div>
+        <div class="widget qode_separator_widget" style="margin-bottom: -37px;"></div>
+        <div id="text-5" class="widget widget_text posts_holder">
+            <div class="textwidget">
+                <p>Lorem ipsum dolor sit amet conset ctetur adipisicing elit sed do eiu sm od tempor incidi dunt</p>
+            </div>
+        </div>
+        <div class="widget qode_separator_widget" style="margin-bottom: -18px;"></div><span class='q_social_icon_holder normal_social' data-color=#323232 data-hover-color=#636363><a itemprop='url' href='https://www.facebook.com/QodeInteractive/' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook  simple_social" style="color: #323232;margin: 0 12px 0 0;font-size: 18px;"></i></a></span>
+        <span class='q_social_icon_holder normal_social' data-color=#323232 data-hover-color=#636363><a itemprop='url' href='https://www.instagram.com/qodeinteractive/' target='_blank'><i class="qode_icon_font_awesome fa fa-instagram  simple_social" style="color: #323232;margin: 0 12px 0 0;font-size: 18px;"></i></a></span>
+        <span class='q_social_icon_holder normal_social' data-color=#323232 data-hover-color=#636363><a itemprop='url' href='https://twitter.com/QodeInteractive' target='_blank'><i class="qode_icon_font_awesome fa fa-twitter  simple_social" style="color: #323232;font-size: 18px;"></i></a></span>
+    </section>
+    <div class="wrapper">
+        <div class="wrapper_inner">
+
+
+            <header class=" scroll_header_top_area  regular with_border page_header">
+                <div class="header_inner clearfix">
+                    <div class="header_top_bottom_holder">
+                        <div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 1);'>
+                            <div class="header_inner_left">
+                                <div class="mobile_menu_button">
+                                    <span>
+<span aria-hidden="true" class="qode_icon_font_elegant icon_menu "></span> </span>
+                                </div>
+                                <div class="logo_wrapper">
+                                    <div class="q_logo">
+                                        <a itemprop="url" href="https://bridge382.qodeinteractive.com/">
+                                            <img itemprop="image" class="normal" src="wp-content/uploads/2020/07/logo.png" alt="Logo"> <img itemprop="image" class="light" src="wp-content/uploads/2020/07/logo.png" alt="Logo" /> <img itemprop="image" class="dark"
+                                                src="wp-content/uploads/2020/07/logo.png" alt="Logo" /> <img itemprop="image" class="sticky" src="wp-content/uploads/2020/07/logo.png" alt="Logo" /> <img itemprop="image" class="mobile" src="wp-content/uploads/2020/07/logo.png"
+                                                alt="Logo" /> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header_inner_right">
+                                <div class="side_menu_button_wrapper right">
+                                    <div class="side_menu_button">
+                                        <a class="side_menu_button_link normal qode-side-menu-button-svg" href="javascript:void(0)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" " x="0px" y="0px" width="26px" height="18px" viewBox="0 0 26 18" enable-background="new 0 0 26 18" xml:space="preserve">
+<line fill="none" stroke="#323232" stroke-width="2" stroke-miterlimit="10" x1="0" y1="1" x2="26" y2="1" />
+<line fill="none" stroke="#323232" stroke-width="2" stroke-miterlimit="10" x1="0" y1="9" x2="26" y2="9" />
+<line fill="none" stroke="#323232" stroke-width="2" stroke-miterlimit="10" x1="0" y1="17" x2="26" y2="17" />
+</svg> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="main_menu drop_down center">
+                                <ul id="menu-main-menu" class="">
+                                    <li id="nav-menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home  narrow"><a href="https://bridge382.qodeinteractive.com/" class=""><i class="menu_icon blank fa"></i><span>Home<span class="underline_dash"></span></span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://bridge382.qodeinteractive.com/about/" class=""><i class="menu_icon blank fa"></i><span>About<span class="underline_dash"></span></span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-90 current_page_item active narrow"><a href="https://bridge382.qodeinteractive.com/books/" class=" current "><i class="menu_icon blank fa"></i><span>Business<span class="underline_dash"></span></span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://bridge382.qodeinteractive.com/contact/" class=""><i class="menu_icon blank fa"></i><span>Contact<span class="underline_dash"></span></span><span class="plus"></span></a></li>
+                                </ul>
+                            </nav>
+                            <nav class="mobile_menu">
+                                <ul id="menu-main-menu-1" class="">
+                                    <li id="mobile-menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home "><a href="https://bridge382.qodeinteractive.com/" class=""><span>Home</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                                    <li id="mobile-menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://bridge382.qodeinteractive.com/about/" class=""><span>About</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                                    <li id="mobile-menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-90 current_page_item active"><a href="https://bridge382.qodeinteractive.com/books/" class=" current "><span>Business</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                                    <li id="mobile-menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://bridge382.qodeinteractive.com/contact/" class=""><span>Contact</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <a id="back_to_top" href="#">
+                <span class="fa-stack">
+<span aria-hidden="true" class="qode_icon_font_elegant arrow_up "></span> </span>
+            </a>
+            <div class="content content_top_margin_none">
+                <div class="content_inner  ">
+                    <div class="full_width">
+                        <div class="full_width_inner">
+                            <div data-elementor-type="wp-page" data-elementor-id="90" class="elementor elementor-90" data-elementor-settings="[]">
+                                <div class="elementor-inner">
+                                    <div class="elementor-section-wrap">
+                                        <section class="elementor-element elementor-element-53e73870 elementor-section-boxed elementor-section-height-default elementor-section-height-default parallax_section_no qode_elementor_container_no elementor-section elementor-top-section" data-id="53e73870"
+                                            data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div class="elementor-row">
+                                                    <div class="elementor-element elementor-element-67604aa8 elementor-column elementor-col-100 elementor-top-column" data-id="67604aa8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                                            <div class="elementor-widget-wrap">
+                                                                <div class="elementor-element elementor-element-38a20b6d elementor-widget elementor-widget-spacer" data-id="38a20b6d" data-element_type="widget" data-widget_type="spacer.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <div class="elementor-spacer">
+                                                                            <div class="elementor-spacer-inner"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-element elementor-element-3214f877 elementor-widget elementor-widget-heading" data-id="3214f877" data-element_type="widget" data-widget_type="heading.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <h3 class="elementor-heading-title elementor-size-default">Big O farm</h3>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-element elementor-element-4862ead1 elementor-widget elementor-widget-spacer" data-id="4862ead1" data-element_type="widget" data-widget_type="spacer.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <div class="elementor-spacer">
+                                                                            <div class="elementor-spacer-inner"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="elementor-element elementor-element-463ba37a elementor-section-full_width qode_elementor_container_inner elementor-section-height-default elementor-section-height-default parallax_section_no elementor-section elementor-top-section" data-id="463ba37a"
+                                            data-element_type="section">
+                                            <div>
+                                                <div class="elementor-container elementor-column-gap-default">
+                                                    <div class="elementor-row" style="
+                                                padding: 8px;">
+                                                        <div class="elementor-element elementor-element-5c593b02 elementor-column elementor-col-25 elementor-top-column" data-id="5c593b02" data-element_type="column">
+                                                            <div class="elementor-column-wrap  elementor-element-populated sb">
+                                                                <div class="elementor-widget-wrap">
+                                                                    <div class="elementor-element elementor-element-56c6d18c elementor-widget elementor-widget-heading" data-id="56c6d18c" data-element_type="widget" data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h5 class=" sb2">LODGING & ENTERTAINMENT</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-73912dfa elementor-widget elementor-widget-spacer " data-id="73912dfa " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-16922c2a elementor-widget elementor-widget-text-editor " data-id="16922c2a " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p style="margin: 34px 0 0 0; "><a href="# ">ART RESIDENCY</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-500f2f6b elementor-widget elementor-widget-text-editor " data-id="500f2f6b " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">HOSTEL</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-626fcbbb elementor-widget elementor-widget-spacer " data-id="626fcbbb " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-7696527d elementor-widget elementor-widget-text-editor " data-id="7696527d " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">HOTEL</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-16922c2a elementor-widget elementor-widget-text-editor " data-id="16922c2a " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p>
+                                                                                    <a href="# "></a>WELLNESS RETREAT</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-c420717 elementor-widget elementor-widget-spacer " data-id="c420717 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-60c8f047 elementor-widget elementor-widget-text-editor " data-id="60c8f047 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> FARM HOUSE</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-3509216 elementor-widget elementor-widget-spacer " data-id="3509216 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-16922c2a elementor-widget elementor-widget-text-editor " data-id="16922c2a " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> HANDICRAFT VILLAGE</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-2ac2d35b elementor-widget elementor-widget-spacer " data-id="2ac2d35b " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-500f2f6b elementor-widget elementor-widget-text-editor " data-id="500f2f6b " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> ARCADE
+</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-16922c2a elementor-widget elementor-widget-text-editor " data-id="16922c2a " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> ART GALLERY
+	</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-500f2f6b elementor-widget elementor-widget-text-editor " data-id="500f2f6b " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> INDOOR PLAYGROUND</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-500f2f6b elementor-widget elementor-widget-text-editor " data-id="500f2f6b " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> BOWLING CENTRE</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-5a5fcf52 elementor-column elementor-col-25 elementor-top-column " data-id="5a5fcf52 " data-element_type="column ">
+                                                            <div class="elementor-column-wrap elementor-element-populated sb ">
+                                                                <div class="elementor-widget-wrap ">
+                                                                    <div class="elementor-element elementor-element-1b98f6bc elementor-widget elementor-widget-heading " data-id="1b98f6bc " data-element_type="widget " data-widget_type="heading.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <h5 class="sb2">NGO & EDUCATION
+                                                                            </h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-586edfdc elementor-widget elementor-widget-spacer " data-id="586edfdc " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-65711248 elementor-widget elementor-widget-text-editor " data-id="65711248 " data-element_type="widget " data-widget_type="text-editor.default
+                                                                                " style="margin: 34px 0 0 0px; ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p style="margin: 0 0 0 0;"><a href="# "> OLD AGE HOME</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-65711248 elementor-widget elementor-widget-text-editor " data-id="65711248 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">GAUSHALA</a> </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-759004dc elementor-widget elementor-widget-spacer " data-id="759004dc " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-2aba45b4 elementor-widget elementor-widget-text-editor " data-id="2aba45b4 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">HEALTH CARE VET</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-65711248 elementor-widget elementor-widget-text-editor " data-id="65711248 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> SCHOOL (DEAF & NUMB)</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-c098957 elementor-widget elementor-widget-spacer " data-id="c098957 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-740e5492 elementor-widget elementor-widget-text-editor " data-id="740e5492 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> SCHOOL</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-6c1e674e elementor-widget elementor-widget-spacer " data-id="6c1e674e " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-65711248 elementor-widget elementor-widget-text-editor " data-id="65711248 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">PUBLIC LIBRARY</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-5b75672d elementor-widget elementor-widget-spacer " data-id="5b75672d " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-4cb4267b elementor-widget elementor-widget-text-editor " data-id="4cb4267b " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">UNIVERSITY</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-65711248 elementor-widget elementor-widget-text-editor " data-id="65711248 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">LANGUAGE SCHOOL</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-4ea72f7 elementor-column elementor-col-25 elementor-top-column " data-id="4ea72f7 " data-element_type="column ">
+                                                            <div class="elementor-column-wrap elementor-element-populated sb ">
+                                                                <div class="elementor-widget-wrap ">
+                                                                    <div class="elementor-element elementor-element-3a5ad9e3 elementor-widget elementor-widget-heading " data-id="3a5ad9e3 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <h5 class="sb2">REAL STATE & HOME BUSINESS</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-8d66a7c elementor-widget elementor-widget-spacer " data-id="8d66a7c " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p style="margin:36px 0 0 0;; "> <a href="# ">FARMHOUSE</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="elementor-element elementor-element-5c0f30ee elementor-widget elementor-widget-spacer " data-id="5c0f30ee " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-61a87365 elementor-widget elementor-widget-text-editor " data-id="61a87365 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">SMALL HOUSES</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">ART AND CRAFT</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-a0b0452 elementor-widget elementor-widget-spacer " data-id="a0b0452 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-1d4c9381 elementor-widget elementor-widget-text-editor " data-id="1d4c9381 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">CLOTHING LINE</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-1d33e312 elementor-widget elementor-widget-spacer " data-id="1d33e312 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">WEB DEVELOPMENT & APP</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-77c03f97 elementor-widget elementor-widget-spacer " data-id="77c03f97 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-399459fc elementor-widget elementor-widget-text-editor " data-id="399459fc " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">ONLINE SHOP</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">OIL</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">BEAUTY PRODUCTS</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">FURNITURE</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-element elementor-element-3935b64e elementor-column elementor-col-25 elementor-top-column " data-id="3935b64e " data-element_type="column ">
+                                                            <div class="elementor-column-wrap elementor-element-populated sb ">
+                                                                <div class="elementor-widget-wrap ">
+                                                                    <div class="elementor-element elementor-element-2838a164 elementor-widget elementor-widget-heading " data-id="2838a164 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <h5 class="sb2 ">AGRICULTURE & FOOD</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-1743a685 elementor-widget elementor-widget-spacer " data-id="1743a685 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-761c3dac elementor-widget elementor-widget-text-editor " data-id="761c3dac " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p style="margin: 28px 0 0 0; "><a href="# ">ANIMAL HUSBANDRY</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">FISHERIES</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-3c171cec elementor-widget elementor-widget-spacer " data-id="3c171cec " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-1bf010f elementor-widget elementor-widget-text-editor " data-id="1bf010f " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">AGRO FORESTRY</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">CASH CROP</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-5127b6f elementor-widget elementor-widget-spacer " data-id="5127b6f " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-64cc2745 elementor-widget elementor-widget-text-editor " data-id="64cc2745 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">VEGETARIAN RESTAURANT</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-6ad9a28 elementor-widget elementor-widget-spacer " data-id="6ad9a28 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# "> BAKERY</a>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-4bed17d1 elementor-widget elementor-widget-spacer " data-id="4bed17d1 " data-element_type="widget " data-widget_type="spacer.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-spacer ">
+                                                                                <div class="elementor-spacer-inner "></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-27ac3a8 elementor-widget elementor-widget-text-editor " data-id="27ac3a8 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">WASTE MANAGMENT</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-28ad3ef3 elementor-widget elementor-widget-text-editor " data-id="28ad3ef3 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">CAFE</a>
+
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="elementor-element elementor-element-27ac3a8 elementor-widget elementor-widget-text-editor " data-id="27ac3a8 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">COFFEE SHOP</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-27ac3a8 elementor-widget elementor-widget-text-editor " data-id="27ac3a8 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">ICE CREAM</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-27ac3a8 elementor-widget elementor-widget-text-editor " data-id="27ac3a8 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p><a href="# ">MOBILE TRUCK</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-27ac3a8 elementor-widget elementor-widget-text-editor " data-id="27ac3a8 " data-element_type="widget " data-widget_type="text-editor.default ">
+                                                                        <div class="elementor-widget-container ">
+                                                                            <div class="elementor-text-editor elementor-clearfix ">
+                                                                                <p> <a href="# ">VEGETARIAN</a></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+
+                                        <section class="elementor-element elementor-element-29b08ab9 elementor-section-full_width qode_elementor_container_inner elementor-section-height-default elementor-section-height-default parallax_section_no elementor-section
+                                                                                elementor-top-section " data-id="29b08ab9 " data-element_type="section ">
+                                            <div class="elementor-container elementor-column-gap-default ">
+                                                <div class="elementor-row ">
+                                                    <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                        <div class="elementor-column-wrap elementor-element-populated ">
+                                                            <div class="elementor-widget-wrap ">
+                                                                <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                    <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                        <h5 class="elementor-heading-title elementor-size-default "><a href="bridge40.qodeinteractive.com\index.html ">Bridge40</a></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                        <div class="elementor-column-wrap elementor-element-populated ">
+                                                            <div class="elementor-widget-wrap ">
+                                                                <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                    <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                        <h5 class="elementor-heading-title elementor-size-default "><a href="bridge34.qodeinteractive.com\index.html ">Bridge34</a></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-row " style="margin: 9px 0 0 0; ">
+                                                <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                    <div class="elementor-column-wrap elementor-element-populated ">
+                                                        <div class="elementor-widget-wrap ">
+                                                            <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                    <h5 class="elementor-heading-title elementor-size-default "><a href="bridge135.qodeinteractive.com\index.html ">Bridge 135</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                    <div class="elementor-column-wrap elementor-element-populated ">
+                                                        <div class="elementor-widget-wrap ">
+                                                            <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                    <h5 class="elementor-heading-title elementor-size-default "><a href="bridge200.qodeinteractive.com\bridge200.qodeinteractive.com\index.html ">Bridge 200</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-row " style="margin: 9px 0 0 0; ">
+                                                <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                    <div class="elementor-column-wrap elementor-element-populated ">
+                                                        <div class="elementor-widget-wrap ">
+                                                            <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                    <h5 class="elementor-heading-title elementor-size-default "><a href="bridge283.qodeinteractive.com\index.html ">bridge 283</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                    <div class="elementor-column-wrap elementor-element-populated ">
+                                                        <div class="elementor-widget-wrap ">
+                                                            <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                    <h5 class="elementor-heading-title elementor-size-default "><a href="bridge322.qodeinteractive.com\index.html ">bridge 322</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-row " style="margin: 9px 0 0 0; ">
+                                                <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                    <div class="elementor-column-wrap elementor-element-populated ">
+                                                        <div class="elementor-widget-wrap ">
+                                                            <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                    <h5 class="elementor-heading-title elementor-size-default "><a href="bridge374.qodeinteractive.com\index.html ">bridge 374</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                    <div class="elementor-column-wrap elementor-element-populated ">
+                                                        <div class="elementor-widget-wrap ">
+                                                            <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                    <h5 class="elementor-heading-title elementor-size-default "><a href="bridge437.qodeinteractive.com\index.html ">bridge 437</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-row " style="margin: 9px 0 0 0; ">
+                                                <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                    <div class="elementor-column-wrap elementor-element-populated ">
+                                                        <div class="elementor-widget-wrap ">
+                                                            <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                    <h5 class="elementor-heading-title elementor-size-default "><a href="bridge292.qodeinteractive.com\index.html ">camping 292</a></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+                                                    <div class="elementor-column-wrap elementor-element-populated ">
+                                                        <div class="elementor-widget-wrap ">
+                                                            <div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+                                                                <div class="elementor-widget-container " style="background-color: #7fe17f; ">
+                                                                    <h5 class="elementor-heading-title elementor-size-default ">Latest Blog Posts</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- imp -->
+                                            <!-- <div class="elementor-row " style="margin: 9px 0 0 0; ">
+				<div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+					<div class="elementor-column-wrap elementor-element-populated ">
+					<div class="elementor-widget-wrap ">
+					<div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+					<div class="elementor-widget-container ">
+					<h5 class="elementor-heading-title elementor-size-default ">Latest Blog Posts</h5> </div>
+					</div>
+					</div>
+					</div>
+					</div>
+				<div class="elementor-element elementor-element-39a8bed7 elementor-column elementor-col-50 elementor-top-column " data-id="39a8bed7 " data-element_type="column " data-settings="{&quot;background_background&quot;:&quot;classic&quot;} ">
+				<div class="elementor-column-wrap elementor-element-populated ">
+				<div class="elementor-widget-wrap ">
+				<div class="elementor-element elementor-element-1d715d45 elementor-widget elementor-widget-heading " data-id="1d715d45 " data-element_type="widget " data-widget_type="heading.default ">
+				<div class="elementor-widget-container ">
+				<h5 class="elementor-heading-title elementor-size-default ">Latest Blog Posts</h5> </div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+ -->
+
+
+                                            <!-- imp -->
+                                    </div>
+
+
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_inner clearfix ">
+                <div class="footer_top_holder ">
+                    <div style="background-color: #e6e6e6;height: 1px " class="footer_top_border "></div>
+                    <div class="footer_top ">
+                        <div class="container ">
+                            <div class="container_inner ">
+                                <div class="three_columns clearfix ">
+                                    <div class="column1 footer_col1 ">
+                                        <div class="column_inner ">
+                                            <div id="text-2 " class="widget widget_text ">
+                                                <div class="textwidget ">
+                                                    <p><img src="wp-content/uploads/2020/07/footer-logo.png " /></p>
+                                                    <p class="qode-footer-copyright ">Copyright @ <a href="https://qodeinteractive.com/ " target="_blank " rel="nofollow noopener noreferrer ">Big O farm 2021</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column2 footer_col2 ">
+                                        <div class="column_inner ">
+                                            <div class="widget qode_separator_widget " style="margin-bottom: 25px;
+                                                                                "></div><span class='q_social_icon_holder normal_social' data-color=#323232 data-hover-color=#636363><a itemprop='url' href='https://www.facebook.com/QodeInteractive/' target='_blank'><i class="qode_icon_font_awesome fa fa-facebook simple_social " style="color: #323232;margin: 0 25px 0 0 ;font-size: 18px; "></i></a></span>
+                                            <span class='q_social_icon_holder normal_social' data-color=#323232 data-hover-color=#636363><a itemprop='url' href='https://www.instagram.com/qodeinteractive/' target='_blank'><i class="qode_icon_font_awesome
+                                                                                fa fa-instagram simple_social " style="color: #323232;margin: 0 25px 0 0;font-size: 18px; "></i></a></span>
+                                            <span class='q_social_icon_holder normal_social' data-color=#323232 data-hover-color=#636363><a itemprop='url' href='https://twitter.com/QodeInteractive' target='_blank'><i class="qode_icon_font_awesome fa
+                                                                                fa-twitter simple_social " style="color: #323232;font-size: 18px; "></i></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="column3 footer_col3 ">
+                                        <div class="column_inner ">
+                                            <div id="text-3 " class="widget widget_text ">
+                                                <div class="textwidget ">
+                                                    <div role="form " class="wpcf7 " id="wpcf7-f49-o1 " lang="en-US " dir="ltr ">
+                                                        <div class="screen-reader-response " role="alert " aria-live="polite "></div>
+                                                        <form action="/books/#wpcf7-f49-o1 " method="post " class="wpcf7-form init cf7_custom_style_1 " novalidate="novalidate ">
+                                                            <div style="display: none; ">
+                                                                <input type="hidden " name="_wpcf7 " value="49 " />
+                                                                <input type="hidden " name="_wpcf7_version " value="5.2 " />
+                                                                <input type="hidden " name="_wpcf7_locale " value="en_US " />
+                                                                <input type="hidden " name="_wpcf7_unit_tag " value="wpcf7-f49-o1 " />
+                                                                <input type="hidden " name="_wpcf7_container_post " value="0 " />
+                                                                <input type="hidden " name="_wpcf7_posted_data_hash " value=" " />
+                                                            </div>
+                                                            <div class="two_columns_form_without_space ">
+                                                                <div class="column_left ">
+                                                                    <span class="wpcf7-form-control-wrap your-name "><input type="text " name="your-name " value=" " size="40 " class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required
+                                                                                " aria-required="true " aria-invalid="false " placeholder="Your e-mail " /></span>
+                                                                </div>
+                                                                <div class="column_right ">
+                                                                    <input type="submit " value="subscribe " class="wpcf7-form-control wpcf7-submit " />
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpcf7-response-output " role="alert " aria-hidden="true "></div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom_holder ">
+                    <div class="footer_bottom ">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <div class="qode-demos-toolbar " data-position="64% "></div>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wpcf7 = {
+            "apiSettings ": {
+                "root ": "https:\/\/wp-json\/contact-form-7\/v1 ",
+                "namespace ": "contact-form-7\/v1 "
+            },
+            "cached ": "1 "
+        };
+        /* ]]> */
+    </script>
+    <script src="wp-content/cache/minify/0fef6.js "></script>
+    <script type='text/javascript' src='https://toolbar.qodeinteractive.com/_qode_toolbar/assets/js/qode-demos-modules.js?ver=5.4.7'></script>
+    <script src="wp-content/cache/minify/a39a9.js "></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var qodefGlobal = {
+            "vars ": {
+                "adminBarHeight ": 0,
+                "iconArrowLeft ": "<svg xmlns=\ "
+                http: \ /\/www.w3.org\/2000\/svg\" xmlns:xlink=\ "http:\/\/www.w3.org\/1999\/xlink\" x=\ "0px\" y=\ "0px\" viewBox=\ "0 0 34.2 32.3\" xml:space=\ "preserve\" style=\ "stroke-width: 2;\"> <
+                line x1 = \"0.5\" y1=\ "
+                16\ " x2=\ "
+                33.5\ " y2=\ "
+                16\ "\/> <
+                line x1 = \"0.3\" y1=\ "
+                16.5\ " x2=\ "
+                16.2\ " y2=\ "
+                0.7\ "\/> <
+                line x1 = \"0\" y1=\ "
+                15.4\ " x2=\ "
+                16.2\ " y2=\ "
+                31.6\ "\/> <\ / svg > ",
+                "
+                iconArrowRight ": " < svg xmlns = \"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\ "
+                http: \ /\/www.w3.org\/1999\/xlink\" x=\ "0px\" y=\ "0px\" viewBox=\ "0 0 34.2 32.3\" xml:space=\
+                "preserve\" style=\ "
+                stroke - width: 2;\
+                "><line x1=\"0\" y1=\"16\" x2=\"33\" y2=\"16\"\/><line x1=\"17.3\" y1=\"0.7\" x2=\"33.2\" y2=\"16.5\"\/><line x1=\"17.3\" y1=\"31.6\" x2=\"33.5\" y2=\"15.4\"\/><\/svg>",
+                "iconClose": "<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 9.1 9.1\" xml:space=\"preserve\"><g><path d=\"M8.5,0L9,0.6L5.1,4.5L9,8.5L8.5,9L4.5,5.1L0.6,9L0,8.5L4,4.5L0,0.6L0.6,0L4.5,4L8.5,0z\"\/><\/g><\/svg>"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script src="wp-content/cache/minify/8f1a2.js"></script>
+    <script type='text/javascript'>
+        var mejsL10n = {
+            "language": "en",
+            "strings": {
+                "mejs.download-file": "Download File",
+                "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/",
+                "mejs.fullscreen": "Fullscreen",
+                "mejs.play": "Play",
+                "mejs.pause": "Pause",
+                "mejs.time-slider": "Time Slider",
+                "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.",
+                "mejs.live-broadcast": "Live Broadcast",
+                "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.",
+                "mejs.unmute": "Unmute",
+                "mejs.mute": "Mute",
+                "mejs.volume-slider": "Volume Slider",
+                "mejs.video-player": "Video Player",
+                "mejs.audio-player": "Audio Player",
+                "mejs.captions-subtitles": "Captions\/Subtitles",
+                "mejs.captions-chapters": "Chapters",
+                "mejs.none": "None",
+                "mejs.afrikaans": "Afrikaans",
+                "mejs.albanian": "Albanian",
+                "mejs.arabic": "Arabic",
+                "mejs.belarusian": "Belarusian",
+                "mejs.bulgarian": "Bulgarian",
+                "mejs.catalan": "Catalan",
+                "mejs.chinese": "Chinese",
+                "mejs.chinese-simplified": "Chinese (Simplified)",
+                "mejs.chinese-traditional": "Chinese (Traditional)",
+                "mejs.croatian": "Croatian",
+                "mejs.czech": "Czech",
+                "mejs.danish": "Danish",
+                "mejs.dutch": "Dutch",
+                "mejs.english": "English",
+                "mejs.estonian": "Estonian",
+                "mejs.filipino": "Filipino",
+                "mejs.finnish": "Finnish",
+                "mejs.french": "French",
+                "mejs.galician": "Galician",
+                "mejs.german": "German",
+                "mejs.greek": "Greek",
+                "mejs.haitian-creole": "Haitian Creole",
+                "mejs.hebrew": "Hebrew",
+                "mejs.hindi": "Hindi",
+                "mejs.hungarian": "Hungarian",
+                "mejs.icelandic": "Icelandic",
+                "mejs.indonesian": "Indonesian",
+                "mejs.irish": "Irish",
+                "mejs.italian": "Italian",
+                "mejs.japanese": "Japanese",
+                "mejs.korean": "Korean",
+                "mejs.latvian": "Latvian",
+                "mejs.lithuanian": "Lithuanian",
+                "mejs.macedonian": "Macedonian",
+                "mejs.malay": "Malay",
+                "mejs.maltese": "Maltese",
+                "mejs.norwegian": "Norwegian",
+                "mejs.persian": "Persian",
+                "mejs.polish": "Polish",
+                "mejs.portuguese": "Portuguese",
+                "mejs.romanian": "Romanian",
+                "mejs.russian": "Russian",
+                "mejs.serbian": "Serbian",
+                "mejs.slovak": "Slovak",
+                "mejs.slovenian": "Slovenian",
+                "mejs.spanish": "Spanish",
+                "mejs.swahili": "Swahili",
+                "mejs.swedish": "Swedish",
+                "mejs.tagalog": "Tagalog",
+                "mejs.thai": "Thai",
+                "mejs.turkish": "Turkish",
+                "mejs.ukrainian": "Ukrainian",
+                "mejs.vietnamese": "Vietnamese",
+                "mejs.welsh": "Welsh",
+                "mejs.yiddish": "Yiddish"
+            }
+        };
+    </script>
+    <script src="wp-content/cache/minify/864c2.js"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var _wpmejsSettings = {
+            "pluginPath": "\/wp-includes\/js\/mediaelement\/",
+            "classPrefix": "mejs-",
+            "stretching": "responsive"
+        };
+        /* ]]> */
+    </script>
+    <script src="wp-content/cache/minify/43551.js"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var QodeAdminAjax = {
+            "ajaxurl": "https:\/\/bridge382.qodeinteractive.com\/wp-admin\/admin-ajax.php"
+        };
+        var qodeGlobalVars = {
+            "vars": {
+                "qodeAddingToCartLabel": "Adding to Cart...",
+                "page_scroll_amount_for_sticky": ""
+            }
+        };
+        /* ]]> */
+    </script>
+    <script src="wp-content/cache/minify/b40e6.js"></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var qodeLike = {
+            "ajaxurl": "https:\/\/bridge382.qodeinteractive.com\/wp-admin\/admin-ajax.php"
+        };
+        /* ]]> */
+    </script>
+    <script src="wp-content/cache/minify/1dcb1.js"></script>
+    <script type='text/javascript'>
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "downloadImage": "Download image"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "version": "2.9.13",
+            "urls": {
+                "assets": "https:\/\/bridge382.qodeinteractive.com\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "settings": {
+                "page": [],
+                "general": {
+                    "elementor_global_image_lightbox": "yes",
+                    "elementor_lightbox_enable_counter": "yes",
+                    "elementor_lightbox_enable_fullscreen": "yes",
+                    "elementor_lightbox_enable_zoom": "yes",
+                    "elementor_lightbox_enable_share": "yes",
+                    "elementor_lightbox_title_src": "title",
+                    "elementor_lightbox_description_src": "description"
+                },
+                "editorPreferences": []
+            },
+            "post": {
+                "id": 90,
+                "title": "Bridge%20%7C%20Books",
+                "excerpt": "",
+                "featuredImage": false
+            }
+        };
+    </script>
+    <script src="wp-content/cache/minify/01bad.js"></script>
+</body>
+
+</html>
